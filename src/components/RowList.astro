@@ -1,3 +1,4 @@
+---
 import { path } from "../paths";
 
 interface Props {
@@ -6,7 +7,7 @@ interface Props {
     title: string;
     text?: string;
     outcome?: string;
-    metrics?: Array<{ value: string; label: string }>;
+    metrics?: { value: string; label: string }[];
     slug?: string;
     date?: string;
     excerpt?: string;
@@ -27,9 +28,9 @@ const { items, heading: Heading = "h3" } = Astro.props;
       {item.metrics ? (
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin:12px 0 14px;">
           {item.metrics.map((m) => (
-            <div style="background:#1E2330; border:1px solid rgba(212,175,55,0.35); border-radius:8px; padding:10px 14px; min-width:120px;">
+            <div style="background:#16233A; border:1px solid rgba(212,175,55,0.35); border-radius:8px; padding:10px 14px; min-width:120px;">
               <div style="font-size:24px; font-weight:700; color:#E8C86A; line-height:1;">{m.value}</div>
-              <div style="font-size:12px; font-weight:400; color:#9AA9C2; margin-top:4px;">{m.label}</div>
+              <div style="font-size:12px; font-weight:400; color:#AAB8D0; margin-top:4px;">{m.label}</div>
             </div>
           ))}
         </div>

@@ -11,7 +11,12 @@ export const DATA = {
   { value: "250+", label: "Apps Migrated" },
   { value: "150+", label: "Engineers Led" },
 ],
-  /*stats: [
+ stats: [
+  { value: "£30M+", label: "Overall Portfolio Led" },
+  { value: "£1M+", label: "Annual Savings" },
+  { value: "250+", label: "Apps Migrated" },
+  { value: "150+", label: "Engineers Led" },
+], /*stats: [
     { value: "£50M+", label: "Overall Portfolio Led" },
     { value: "250+", label: "Applications Migrated" },
     { value: "150+", label: "Engineers Led" },

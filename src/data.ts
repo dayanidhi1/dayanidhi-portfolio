@@ -22,13 +22,56 @@ export const DATA = {
     { title: "Managed Services Growth", text: "Portfolio growth, retention, service improvement and commercial performance." },
     { title: "AI & AIOps Readiness", text: "AI strategy, Copilot Studio, Microsoft Foundry, Agentic AI and AI Governance." }
   ],
-  work: [
+ /* work: [
     { title: "Enterprise Cloud Migration - Energy & Utilities", outcome: "250+ apps migrated • 40% cost reduction", text: "Led £50M revenue migration programme from on-prem to cloud." },
     { title: "Cloud Management Portal - GSK", outcome: "£1M+ annual savings • Build vs Buy", text: "Led build-vs-buy decision, built in-house CMP, removed vendor lock-in." },
     { title: "Professional & Managed Services Growth - EMEA", outcome: "£10M+ portfolio • Retention + Growth", text: "Led EMEA professional services & managed services growth." },
     { title: "Platform & Release Transformation - Netcracker", outcome: "Zero-downtime • 20-30% fewer incidents", text: "Transformed legacy platforms to cloud-enabled, zero-downtime delivery." },
     { title: "AIOps & AI Readiness", outcome: "AI adoption • Governance", text: "Enterprise AI readiness and AIOps adoption across cloud programmes." }
-  ],
+  ],*/
+  work: [
+  {
+    title: "Enterprise Cloud Migration — Energy & Utilities",
+    metrics: [
+      { value: "250+", label: "Apps Migrated" },
+      { value: "40%", label: "Cost Reduction" },
+      { value: "£50M", label: "Revenue Programme" },
+    ],
+    text: "Led revenue migration programme from on-prem to cloud.",
+  },
+  {
+    title: "Cloud Management Portal — 【entity-GSK¦canonical_name=GSK】",
+    metrics: [
+      { value: "£1M+", label: "Annual Savings" },
+      { value: "Build vs Buy", label: "Decision Led" },
+    ],
+    text: "Led build-vs-buy decision, built in-house CMP, removed vendor lock-in.",
+  },
+  {
+    title: "Managed Services Growth — EMEA",
+    metrics: [
+      { value: "£10M+", label: "Portfolio" },
+      { value: "Retention + Growth", label: "Outcome" },
+    ],
+    text: "Led EMEA professional services & managed services growth.",
+  },
+  {
+    title: "Platform & Release Transformation — Netcracker",
+    metrics: [
+      { value: "Zero-Downtime", label: "Delivery" },
+      { value: "20-30%", label: "Fewer Incidents" },
+    ],
+    text: "Transformed legacy platforms to cloud-enabled, zero-downtime delivery.",
+  },
+  {
+    title: "AIOps & AI Readiness",
+    metrics: [
+      { value: "AI Adoption", label: "Outcome" },
+      { value: "Governance", label: "Built-In" },
+    ],
+    text: "Enterprise AI readiness and AIOps adoption across cloud programmes.",
+  },
+],
   blogs: [
     { slug: "why-transformation-fails-without-ownership", title: "Why Transformation Fails Without Ownership", date: "Nov 2026", excerpt: "Tools don't transform businesses. Ownership does." },
     { slug: "ai-wont-save-broken-operating-model", title: "AI Won't Save a Broken Operating Model", date: "Nov 2026", excerpt: "Fix the operating model first, then add AI." },

@@ -17,7 +17,34 @@ export const DATA = {
     { title: "Build & Scale", text: "Build teams, practices and platforms from scratch and scale them." },
     { title: "Customer Outcomes First", text: "If it doesn't move revenue, cost, or customer experience, it doesn't matter." }
   ],
+  
   consulting: [
+  {
+    title: "Cloud Transformation",
+    metrics: [
+      { value: "40%", label: "Infra Reduction" },
+      { value: "3x", label: "Faster Delivery" },
+    ],
+    text: "End-to-end migration, modernisation and cost optimisation.",
+  },
+  {
+    title: "Managed Services",
+    metrics: [
+      { value: "£10M+", label: "Portfolio" },
+      { value: "95%+", label: "Retention" },
+    ],
+    text: "EMEA professional services & managed services growth.",
+  },
+  {
+    title: "AI & AIOps",
+    metrics: [
+      { value: "AI Readiness", label: "Outcome" },
+      { value: "Governance", label: "Built-In" },
+    ],
+    text: "Enterprise AI readiness and AIOps adoption with governance.",
+  },
+],
+  /*consulting: [
     { title: "Transformation Advisory", text: "CxO advisory, technology strategy, roadmap and operating model design." },
     { title: "Managed Services Growth", text: "Portfolio growth, retention, service improvement and commercial performance." },
     { title: "AI & AIOps Readiness", text: "AI strategy, Copilot Studio, Microsoft Foundry, Agentic AI and AI Governance." }

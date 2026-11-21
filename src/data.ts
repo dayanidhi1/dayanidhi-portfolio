@@ -50,18 +50,6 @@ export const DATA = {
     text: "Enterprise AI readiness and AIOps adoption with governance.",
   },
 ],
-  /*consulting: [
-    { title: "Transformation Advisory", text: "CxO advisory, technology strategy, roadmap and operating model design." },
-    { title: "Managed Services Growth", text: "Portfolio growth, retention, service improvement and commercial performance." },
-    { title: "AI & AIOps Readiness", text: "AI strategy, Copilot Studio, Microsoft Foundry, Agentic AI and AI Governance." }
-  ],
- /* work: [
-    { title: "Enterprise Cloud Migration - Energy & Utilities", outcome: "250+ apps migrated • 40% cost reduction", text: "Led £50M revenue migration programme from on-prem to cloud." },
-    { title: "Cloud Management Portal - GSK", outcome: "£1M+ annual savings • Build vs Buy", text: "Led build-vs-buy decision, built in-house CMP, removed vendor lock-in." },
-    { title: "Professional & Managed Services Growth - EMEA", outcome: "£10M+ portfolio • Retention + Growth", text: "Led EMEA professional services & managed services growth." },
-    { title: "Platform & Release Transformation - Netcracker", outcome: "Zero-downtime • 20-30% fewer incidents", text: "Transformed legacy platforms to cloud-enabled, zero-downtime delivery." },
-    { title: "AIOps & AI Readiness", outcome: "AI adoption • Governance", text: "Enterprise AI readiness and AIOps adoption across cloud programmes." }
-  ],*/
   work: [
   {
     title: "Enterprise Cloud Migration — Energy & Utilities",
@@ -73,7 +61,7 @@ export const DATA = {
     text: "Led revenue migration programme from on-prem to cloud.",
   },
   {
-    title: "Cloud Management Portal — 【entity-GSK¦canonical_name=GSK】",
+    title: "Cloud Management Portal — Global Pharma",
     metrics: [
       { value: "£1M+", label: "Annual Savings" },
       { value: "Build vs Buy", label: "Decision Led" },

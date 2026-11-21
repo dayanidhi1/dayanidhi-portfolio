@@ -32,7 +32,7 @@ const contactLinks = [
     </div>
   </section>
 
- <section class="band" id="about">
+<section class="band" id="about">
   <div class="wrap">
     <h2 class="heading max-w-3xl">{DATA.aboutTitle}</h2>
     <p class="mb-7 max-w-3xl leading-relaxed">{DATA.about}</p>
@@ -44,25 +44,8 @@ const contactLinks = [
         </div>
       ))}
     </div>
-    
   </div>
 </section>
-
-/* <section class="band" id="about">
-    <div class="wrap">
-      <h2 class="heading max-w-3xl">{DATA.aboutTitle}</h2>
-      <p class="mb-7 max-w-3xl leading-relaxed">{DATA.about}</p>
-      <ul class="rows mb-8">
-        {DATA.stats.map(({ value, label }) => (
-          <li class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-            <strong class="text-xl text-teal">{value}</strong>
-            <span>{label}</span>
-          </li>
-        ))}
-      </ul>
-      <RowList items={DATA.entrepreneurMindset} />
-    </div>
-  </section>*/
 
   {listings.map(({ id, title, items, link }) => (
     <section class="band" id={id}>

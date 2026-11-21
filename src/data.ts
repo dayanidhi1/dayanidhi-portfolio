@@ -1,10 +1,10 @@
 export const DATA = {
   name: "Dayanidhi Naidu",
   title: "Technology Transformation Leader",
-  tagline: "Building transformation outcomes like an entrepreneur — ownership, commercial impact, and growth, not just delivery.",
+  tagline: "Building transformation outcomes like an entrepreneur - ownership, commercial impact, and growth, not just delivery.",
   location: "Based in UK • Working across EMEA • Global customers",
   aboutTitle: "Transformation Leader with an Entrepreneur's Mindset",
-  about: "Technology Transformation Leader with 21 years delivering software, devOps, cloud, platform engineering, professional & managed services and digital transformation across financial services, telecom, healthcare, retail and energy. I operate with an entrepreneur's mindset — accountable for growth, commercial outcomes, and lasting value, not just project delivery. Trusted advisor to CxOs, managing portfolios up to £50M+ and leading global teams of 150+.",
+  about: "Technology Transformation Leader with 21 years delivering software, devOps, cloud, platform engineering, professional & managed services and digital transformation across financial services, telecom, healthcare, retail and energy. I operate with an entrepreneur's mindset - accountable for growth, commercial outcomes, and lasting value, not just project delivery. Trusted advisor to CxOs, managing portfolios up to £50M+ and leading global teams of 150+.",
   stats: [
     { value: "£50M+", label: "Overall Portfolio Led" },
     { value: "250+", label: "Applications Migrated" },
@@ -12,7 +12,7 @@ export const DATA = {
     { value: "£1M+", label: "Annual Savings" }
   ],
   entrepreneurMindset: [
-    { title: "Ownership Mentality", text: "Treat every engagement like my own business — P&L, outcomes, reputation on the line." },
+    { title: "Ownership Mentality", text: "Treat every engagement like my own business - P&L, outcomes, reputation on the line." },
     { title: "Commercial Growth", text: "Grow portfolios, expand offerings, win and retain enterprise customers." },
     { title: "Build & Scale", text: "Build teams, practices and platforms from scratch and scale them." },
     { title: "Customer Outcomes First", text: "If it doesn't move revenue, cost, or customer experience, it doesn't matter." }
@@ -23,10 +23,10 @@ export const DATA = {
     { title: "AI & AIOps Readiness", text: "AI strategy, Copilot Studio, Microsoft Foundry, Agentic AI and AI Governance." }
   ],
   work: [
-    { title: "Enterprise Cloud Migration — Energy & Utilities", outcome: "250+ apps migrated • 40% cost reduction", text: "Led £50M revenue migration programme from on-prem to cloud." },
-    { title: "Cloud Management Portal — GSK", outcome: "£1M+ annual savings • Build vs Buy", text: "Led build-vs-buy decision, built in-house CMP, removed vendor lock-in." },
-    { title: "Managed Services Growth — EMEA", outcome: "£10M+ portfolio • Retention + Growth", text: "Led EMEA professional services & managed services growth." },
-    { title: "Platform & Release Transformation — Netcracker", outcome: "Zero-downtime • 20-30% fewer incidents", text: "Transformed legacy platforms to cloud-enabled, zero-downtime delivery." },
+    { title: "Enterprise Cloud Migration - Energy & Utilities", outcome: "250+ apps migrated • 40% cost reduction", text: "Led £50M revenue migration programme from on-prem to cloud." },
+    { title: "Cloud Management Portal - GSK", outcome: "£1M+ annual savings • Build vs Buy", text: "Led build-vs-buy decision, built in-house CMP, removed vendor lock-in." },
+    { title: "Professional & Managed Services Growth - EMEA", outcome: "£10M+ portfolio • Retention + Growth", text: "Led EMEA professional services & managed services growth." },
+    { title: "Platform & Release Transformation - Netcracker", outcome: "Zero-downtime • 20-30% fewer incidents", text: "Transformed legacy platforms to cloud-enabled, zero-downtime delivery." },
     { title: "AIOps & AI Readiness", outcome: "AI adoption • Governance", text: "Enterprise AI readiness and AIOps adoption across cloud programmes." }
   ],
   blogs: [
@@ -35,13 +35,13 @@ export const DATA = {
     { slug: "from-delivery-to-growth", title: "From Delivery to Growth: The Entrepreneur's Playbook", date: "Nov 2026", excerpt: "Delivery gets you paid. Growth gets you invited back." }
   ],
   experience: [
-    { dates: "Feb 2022 — Present", role: "Transformation Lead, EMEA Professional Services & Managed Services", company: "Rackspace Technology EMEA Ltd", points: ["Lead portfolio £10M+, partner with CTO/COO on strategy and business outcomes", "20% faster deployments, 30% fewer incidents, 30% cloud savings", "AIOps adoption, operational frameworks, professional & managed services growth"] },
-    { dates: "Apr 2021 — Feb 2022", role: "Associate Director, Platform Engineering & Release Transformation", company: "Netcracker Technology", points: ["Zero-downtime deployment capability across enterprise products", "60% improved release efficiency, 40% incident reduction"] },
-    { dates: "Apr 2012 — Apr 2021", role: "Transformation Manager, Cloud & DevOps Practice", company: "Cognizant Technology Solutions EMEA Ltd", points: ["Portfolio £50M+, 250+ apps migration, £15-20M Energy programme", "GSK CMP build-vs-buy — £700K+ annual savings", "Led 150+ engineers, supported 500+ hires, 40% infra spend reduction"] },
-    { dates: "2005 — 2012", role: "Previous Experience", company: "Infosys • TCS", points: ["Middleware Integration Consultant — Infosys, Dec 2009 - Apr 2012", "Senior Software Engineer — TCS, Aug 2005 - Nov 2009"] }
+    { dates: "Feb 2022 - Present", role: "Transformation Lead, EMEA Professional Services & Managed Services", company: "Rackspace Technology EMEA Ltd", points: ["Lead portfolio £10M+, partner with CTO/COO on strategy and business outcomes", "20% faster deployments, 30% fewer incidents, 30% cloud savings", "AIOps adoption, operational frameworks, professional & managed services growth"] },
+    { dates: "Apr 2021 - Feb 2022", role: "Associate Director, Platform Engineering & Release Transformation", company: "Netcracker Technology", points: ["Zero-downtime deployment capability across enterprise products", "60% improved release efficiency, 40% incident reduction"] },
+    { dates: "Apr 2012 - Apr 2021", role: "Transformation Manager, Cloud & DevOps Practice", company: "Cognizant Technology Solutions EMEA Ltd", points: ["Portfolio £50M+, 250+ apps migration, £15-20M Energy programme", "GSK CMP build-vs-buy - £700K+ annual savings", "Led 150+ engineers, supported 500+ hires, 40% infra spend reduction"] },
+    { dates: "2005 - 2012", role: "Previous Experience", company: "Infosys • TCS", points: ["Middleware Integration Consultant - Infosys, Dec 2009 - Apr 2012", "Senior Software Engineer - TCS, Aug 2005 - Nov 2009"] }
   ],
-  certifications: ["Microsoft Azure Fundamentals (AZ-900)", "Microsoft Azure AI — Business Solutions Architect (AB-100)", "Google Cloud Professional Cloud Architect", "Google Cloud Associate Cloud Engineer", "AWS DevOps Engineer — Professional", "EXIN Agile Scrum Master"],
-  education: "MCA + BSc Computer Science — Pt. Ravishankar Shukla University, Raipur",
+  certifications: ["Microsoft Azure Fundamentals (AZ-900)", "Microsoft Azure AI - Business Solutions Architect (AB-100)", "Google Cloud Professional Cloud Architect", "Google Cloud Associate Cloud Engineer", "AWS DevOps Engineer - Professional", "EXIN Agile Scrum Master"],
+  education: "MCA + BSc Computer Science - Pt. Ravishankar Shukla University, Raipur",
   contact: {
     email: "dayanidhi.naidu@gmail.com",
     phone: "07733 323 520",

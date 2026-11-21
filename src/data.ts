@@ -6,17 +6,12 @@ export const DATA = {
   aboutTitle: "Transformation Leader with an Entrepreneur's Mindset",
   about: "Technology Transformation Leader with 21 years delivering software, devOps, cloud, platform engineering, professional & managed services and digital transformation across financial services, telecom, healthcare, retail and energy. I operate with an entrepreneur's mindset - accountable for growth, commercial outcomes, and lasting value, not just project delivery. Trusted advisor to CxOs, managing portfolios up to £50M+ and leading global teams of 150+.",
   stats: [
-  { value: "£30M+", label: "Overall Portfolio Led" },
+  { value: "£50M+", label: "Overall Portfolio Led" },
   { value: "£1M+", label: "Annual Savings" },
   { value: "250+", label: "Apps Migrated" },
   { value: "150+", label: "Engineers Led" },
 ],
- stats: [
-  { value: "£30M+", label: "Overall Portfolio Led" },
-  { value: "£1M+", label: "Annual Savings" },
-  { value: "250+", label: "Apps Migrated" },
-  { value: "150+", label: "Engineers Led" },
-], /*stats: [
+  /*stats: [
     { value: "£50M+", label: "Overall Portfolio Led" },
     { value: "250+", label: "Applications Migrated" },
     { value: "150+", label: "Engineers Led" },

@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-page: #16203A;
+  --color-section: #1C2A4A;
+  --color-row: #243656;
+  --color-divider: #34476B;
+  --color-body: #D1D9E6;
+  --color-muted: #9AA9C2;
+  --color-teal: #2DD4BF;
+  --color-gold: #C9A86A;
+}
+
+@layer base {
+  html { scroll-padding-top: 8rem; }
+  body { @apply bg-page text-body antialiased; }
+  h1, h2, h3 { @apply text-white; }
+  h1, h2 { font-family: Georgia, "Times New Roman", serif; }
+  a:focus-visible { @apply outline-2 outline-offset-4 outline-teal; }
+}
+
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-5xl px-6 sm:px-10; }
+  .band { @apply py-12 sm:py-16; }
+  .band:nth-child(even) { @apply bg-section; }
+  .heading { @apply mb-6 text-3xl leading-tight sm:text-4xl; }
+  .rows { @apply divide-y divide-divider border border-divider bg-row; }
+  .rows > li { @apply px-5 py-4 sm:px-7 sm:py-5; }
+  .row-title { @apply text-lg font-semibold leading-snug text-white; }
+  .text-link { @apply font-semibold text-teal underline underline-offset-4 hover:text-white; }
+  .button { @apply inline-flex min-h-11 items-center rounded-sm bg-teal px-5 py-2 font-semibold text-page hover:bg-white; }
+  .eyebrow { @apply text-sm font-semibold tracking-wide text-gold; }
+}

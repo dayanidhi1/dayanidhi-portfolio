@@ -1,0 +1,97 @@
+---
+import Layout from "../components/Layout.astro";
+import RowList from "../components/RowList.astro";
+import BookingLink from "../components/BookingLink.astro";
+import { DATA, UI } from "../data";
+import { path } from "../paths";
+
+const listings = [
+  { id: "consulting", title: UI.consulting, items: DATA.consulting.slice(0, 3), link: UI.viewConsulting },
+  { id: "work", title: UI.work, items: DATA.work, link: UI.viewWork },
+  { id: "blogs", title: UI.blogs, items: DATA.blogs.slice(0, 3), link: UI.viewBlogs }
+];
+
+const contactLinks = [
+  { label: DATA.contact.email, href: `mailto:${DATA.contact.email}` },
+  { label: DATA.contact.phone, href: `tel:${DATA.contact.phone.replace(/\s/g, "")}` },
+  { label: UI.linkedin, href: DATA.contact.linkedin },
+  { label: UI.github, href: DATA.contact.github }
+];
+---
+<Layout>
+  <section class="band">
+    <div class="wrap flex flex-col items-start gap-7 sm:flex-row sm:items-center sm:justify-between sm:gap-12">
+      <div class="max-w-2xl">
+        <p class="eyebrow mb-3">{DATA.title}</p>
+        <h1 class="text-4xl leading-tight sm:text-5xl">{DATA.name}</h1>
+        <p class="mt-4 max-w-xl text-lg leading-relaxed">{DATA.tagline}</p>
+        <p class="mt-3 text-sm text-muted">{DATA.location}</p>
+        <div class="mt-7"><BookingLink /></div>
+      </div>
+      <img class="order-first size-20 shrink-0 border border-divider object-cover sm:order-none sm:size-36" src={path("photo.jpg")} alt="" width="144" height="144" />
+    </div>
+  </section>
+
+  <section class="band" id="about">
+    <div class="wrap">
+      <h2 class="heading max-w-3xl">{DATA.aboutTitle}</h2>
+      <p class="mb-7 max-w-3xl leading-relaxed">{DATA.about}</p>
+      <ul class="rows mb-8">
+        {DATA.stats.map(({ value, label }) => (
+          <li class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+            <strong class="text-xl text-teal">{value}</strong>
+            <span>{label}</span>
+          </li>
+        ))}
+      </ul>
+      <RowList items={DATA.entrepreneurMindset} />
+    </div>
+  </section>
+
+  {listings.map(({ id, title, items, link }) => (
+    <section class="band" id={id}>
+      <div class="wrap">
+        <h2 class="heading">{title}</h2>
+        <RowList items={items} />
+        <a class="text-link mt-6 inline-block" href={path(`${id}/`)}>{link}</a>
+      </div>
+    </section>
+  ))}
+
+  <section class="band" id="experience">
+    <div class="wrap">
+      <h2 class="heading">{UI.experience}</h2>
+      <ul class="rows">
+        {DATA.experience.map(({ dates, role, company, points }) => (
+          <li>
+            <p class="eyebrow mb-1">{dates}</p>
+            <h3 class="row-title">{role}</h3>
+            <p class="mt-1 text-muted">{company}</p>
+            <ul class="mt-3 list-disc space-y-1 pl-5">
+              {points.map((point) => <li>{point}</li>)}
+            </ul>
+          </li>
+        ))}
+      </ul>
+      <h3 class="row-title mt-8 mb-3">{UI.certifications}</h3>
+      <ul class="rows">
+        {DATA.certifications.map((certification) => <li>{certification}</li>)}
+      </ul>
+      <h3 class="row-title mt-8 mb-3">{UI.education}</h3>
+      <p>{DATA.education}</p>
+    </div>
+  </section>
+
+  <section class="band" id="contact">
+    <div class="wrap">
+      <h2 class="heading mb-3">{DATA.contact.ctaTitle}</h2>
+      <p class="max-w-2xl leading-relaxed">{DATA.contact.ctaText}</p>
+      <div class="mt-6 mb-7"><BookingLink /></div>
+      <ul class="rows">
+        {contactLinks.map(({ label, href }) => (
+          <li><a class="text-link break-words" href={href}>{label}</a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Layout>

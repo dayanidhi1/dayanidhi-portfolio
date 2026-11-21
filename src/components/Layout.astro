@@ -1,0 +1,62 @@
+---
+import { DATA, UI } from "../data";
+import { path } from "../paths";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  article?: boolean;
+}
+
+const { title, description = DATA.tagline, article = false } = Astro.props;
+const pageTitle = title ? `${title} | ${DATA.name}` : `${DATA.name} | ${DATA.title}`;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
+const photo = new URL(path("photo.jpg"), canonical);
+const navigation = [
+  [UI.home, ""],
+  [UI.about, "#about"],
+  [UI.consulting, "consulting/"],
+  [UI.work, "work/"],
+  [UI.blogs, "blogs/"],
+  [UI.experience, "#experience"],
+  [UI.contact, "#contact"]
+];
+---
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={DATA.name} />
+    <link rel="canonical" href={canonical.href} />
+    <meta property="og:type" content={article ? "article" : "website"} />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content={DATA.name} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:image" content={photo.href} />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <a href="#content" class="sr-only focus:not-sr-only focus:fixed focus:z-30 focus:bg-page focus:p-3">{UI.skip}</a>
+    <header class="sticky top-0 z-20 border-b border-divider bg-page">
+      <nav aria-label={UI.navigation} class="wrap flex flex-wrap items-center gap-x-5 gap-y-0.5 py-2 sm:gap-x-7 sm:py-3">
+        {navigation.map(([label, route]) => {
+          const href = path(route);
+          const current = href === Astro.url.pathname;
+          return <a href={href} aria-current={current ? "page" : undefined} class:list={[
+            "flex min-h-8 items-center py-1 text-sm font-medium hover:text-teal sm:min-h-10",
+            current || (route === "blogs/" && Astro.url.pathname.startsWith(href)) ? "text-teal" : "text-body"
+          ]}>{label}</a>;
+        })}
+      </nav>
+    </header>
+    <main id="content">
+      <slot />
+    </main>
+  </body>
+</html>

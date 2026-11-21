@@ -1,0 +1,23 @@
+---
+import { DATA, UI } from "../data";
+import Layout from "./Layout.astro";
+import RowList from "./RowList.astro";
+import BookingLink from "./BookingLink.astro";
+
+interface Props {
+  section: "consulting" | "work" | "blogs";
+}
+
+const { section } = Astro.props;
+const title = UI[section];
+const items = DATA[section];
+---
+<Layout title={title} description={items.map((item) => item.title).join(" • ")}>
+  <section class="band">
+    <div class="wrap">
+      <h1 class="heading">{title}</h1>
+      <RowList items={items} heading="h2" />
+      {section === "consulting" && <div class="mt-7"><BookingLink /></div>}
+    </div>
+  </section>
+</Layout>

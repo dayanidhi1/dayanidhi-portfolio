@@ -1,3 +1,3 @@
-export function path(route = "") {
-  return `${import.meta.env.BASE_URL.replace(/\/$/, "")}/${route}`;
+export function path(route: string) {
+  return route;
 }

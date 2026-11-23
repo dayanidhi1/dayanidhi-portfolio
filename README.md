@@ -19,4 +19,4 @@ The project path in `astro.config.mjs` keeps routes and assets working under the
 
 ## Cloudflare Pages
 
-Connect the GitHub repository in Cloudflare Pages and select `main` as the production branch. Use `npm run build` as the build command and `dist` as the output directory. Set `NODE_VERSION` to `22` and `SITE_URL` to your production origin so canonical links also point to the production site on preview builds. The build uses root-relative paths on Cloudflare Pages.
+Connect the GitHub repository in Cloudflare Pages and select `main` as the production branch. Use `npm run build` as the build command and `dist` as the output directory. Set `NODE_VERSION` to `22`. The build uses root-relative paths on Cloudflare Pages.

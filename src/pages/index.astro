@@ -28,7 +28,7 @@ const contactLinks = [
         <p class="mt-3 text-sm text-muted">{DATA.location}</p>
         <div class="mt-7"><BookingLink /></div>
       </div>
-      <img class="order-first size-20 shrink-0 border border-divider object-cover sm:order-none sm:size-36" src={path("photo.jpg")} alt="" width="144" height="144" />
+      <img class="order-first size-20 shrink-0 border border-divider object-cover sm:order-none sm:size-36" src={path("/photo.jpg")} alt="" width="144" height="144" />
     </div>
   </section>
 
@@ -52,7 +52,7 @@ const contactLinks = [
       <div class="wrap">
         <h2 class="heading">{title}</h2>
         <RowList items={items} />
-        <a class="text-link mt-6 inline-block" href={path(`${id}/`)}>{link}</a>
+        <a class="text-link mt-6 inline-block" href={path(`/${id}/`)}>{link}</a>
       </div>
     </section>
   ))}

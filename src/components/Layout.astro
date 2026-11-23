@@ -12,15 +12,15 @@ interface Props {
 const { title, description = DATA.tagline, article = false } = Astro.props;
 const pageTitle = title ? `${title} | ${DATA.name}` : `${DATA.name} | ${DATA.title}`;
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
-const photo = new URL(path("photo.jpg"), canonical);
+const photo = new URL(path("/photo.jpg"), canonical);
 const navigation = [
-  [UI.home, ""],
-  [UI.about, "#about"],
-  [UI.consulting, "consulting/"],
-  [UI.work, "work/"],
-  [UI.blogs, "blogs/"],
-  [UI.experience, "#experience"],
-  [UI.contact, "#contact"]
+  [UI.home, "/"],
+  [UI.about, "/#about"],
+  [UI.consulting, "/consulting/"],
+  [UI.work, "/work/"],
+  [UI.blogs, "/blogs/"],
+  [UI.experience, "/#experience"],
+  [UI.contact, "/#contact"]
 ];
 ---
 <!doctype html>
@@ -50,7 +50,7 @@ const navigation = [
           const current = href === Astro.url.pathname;
           return <a href={href} aria-current={current ? "page" : undefined} class:list={[
             "flex min-h-8 items-center py-1 text-sm font-medium hover:text-teal sm:min-h-10",
-            current || (route === "blogs/" && Astro.url.pathname.startsWith(href)) ? "text-teal" : "text-body"
+            current || (route === "/blogs/" && Astro.url.pathname.startsWith(href)) ? "text-teal" : "text-body"
           ]}>{label}</a>;
         })}
       </nav>

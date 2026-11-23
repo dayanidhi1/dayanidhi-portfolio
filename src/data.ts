@@ -94,11 +94,11 @@ export const DATA = {
     text: "Enterprise AI readiness and AIOps adoption across cloud programmes.",
   },
 ],
-  blogs: [
+ /* blogs: [
     { slug: "why-transformation-fails-without-ownership", title: "Why Transformation Fails Without Ownership", date: "Nov 2026", excerpt: "Tools don't transform businesses. Ownership does." },
     { slug: "ai-wont-save-broken-operating-model", title: "AI Won't Save a Broken Operating Model", date: "Nov 2026", excerpt: "Fix the operating model first, then add AI." },
     { slug: "from-delivery-to-growth", title: "From Delivery to Growth: The Entrepreneur's Playbook", date: "Nov 2026", excerpt: "Delivery gets you paid. Growth gets you invited back." }
-  ],
+  ],*/
   experience: [
     { dates: "Feb 2022 - Present", role: "Transformation Lead, EMEA Professional Services & Managed Services", company: "Rackspace Technology EMEA Ltd", points: ["Lead portfolio £10M+, partner with CTO/COO on strategy and business outcomes", "20% faster deployments, 30% fewer incidents, 30% cloud savings", "AIOps adoption, operational frameworks, professional & managed services growth"] },
     { dates: "Apr 2021 - Feb 2022", role: "Associate Director, Platform Engineering & Release Transformation", company: "Netcracker Technology", points: ["Zero-downtime deployment capability across enterprise products", "60% improved release efficiency, 40% incident reduction"] },

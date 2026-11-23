@@ -110,7 +110,6 @@ export const DATA = {
     email: "dayanidhi.naidu@gmail.com",
     phone: "07733 323 520",
     linkedin: "https://www.linkedin.com/in/dayanidhi-naidu-4b484b16/",
-    github: "https://github.com/dayanidhinaidu",
     calendly: "https://calendly.com/dayanidhi-naidu/new-meeting",
     ctaTitle: "Build What's Next Together",
     ctaText: "Partner with me to grow, transform, and scale your technology business."

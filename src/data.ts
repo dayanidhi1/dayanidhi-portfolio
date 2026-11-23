@@ -102,18 +102,6 @@ export const DATA = {
     excerpt: "Tools don't transform businesses. Ownership does.",
     link: "https://medium.com/@dayanidhi.naidu/why-transformations-fail-without-ownership-5772b686ec11",
   },
-  /*{
-    title: "AI Won't Save a Broken Operating Model",
-    date: "Nov 2026",
-    excerpt: "Fix the operating model first, then add AI.",
-    link: "https://medium.com/@dayanidhi.naidu",
-  },
-  {
-    title: "From Delivery to Growth: The Entrepreneur's Playbook",
-    date: "Nov 2026",
-    excerpt: "Delivery gets you paid. Growth gets you invited back.",
-    link: "https://medium.com/@dayanidhi.naidu",
-  },*/
 ],
   experience: [
     { dates: "Feb 2022 - Present", role: "Transformation Lead, EMEA Professional Services & Managed Services", company: "Rackspace Technology EMEA Ltd", points: ["Lead portfolio £10M+, partner with CTO/COO on strategy and business outcomes", "20% faster deployments, 30% fewer incidents, 30% cloud savings", "AIOps adoption, operational frameworks, professional & managed services growth"] },

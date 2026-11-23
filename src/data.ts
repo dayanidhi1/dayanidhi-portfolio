@@ -80,7 +80,8 @@ export const DATA = {
     title: "Platform & Release Transformation — Netcracker",
     metrics: [
       { value: "Zero-Downtime", label: "Delivery" },
-      { value: "20-30%", label: "Fewer Incidents" },
+      { value: "40%", label: "Fewer Incidents" },
+      { value: "70%", label: "Faster Deployment" },
     ],
     text: "Transformed legacy platforms to cloud-enabled, zero-downtime delivery.",
   },
@@ -101,7 +102,7 @@ export const DATA = {
   experience: [
     { dates: "Feb 2022 - Present", role: "Transformation Lead, EMEA Professional Services & Managed Services", company: "Rackspace Technology EMEA Ltd", points: ["Lead portfolio £10M+, partner with CTO/COO on strategy and business outcomes", "20% faster deployments, 30% fewer incidents, 30% cloud savings", "AIOps adoption, operational frameworks, professional & managed services growth"] },
     { dates: "Apr 2021 - Feb 2022", role: "Associate Director, Platform Engineering & Release Transformation", company: "Netcracker Technology", points: ["Zero-downtime deployment capability across enterprise products", "60% improved release efficiency, 40% incident reduction"] },
-    { dates: "Apr 2012 - Apr 2021", role: "Transformation Manager, Cloud & DevOps Practice", company: "Cognizant Technology Solutions EMEA Ltd", points: ["Portfolio £50M+, 250+ apps migration, £15-20M Energy programme", "GSK CMP build-vs-buy - £700K+ annual savings", "Led 150+ engineers, supported 500+ hires, 40% infra spend reduction"] },
+    { dates: "Apr 2012 - Apr 2021", role: "Transformation Manager, Cloud & DevOps Practice", company: "Cognizant Technology Solutions EMEA Ltd", points: ["Portfolio £50M+, 250+ apps migration, £50M Energy programme", "GSK CMP build-vs-buy - £1M annual savings", "Led 150+ engineers, supported 500+ hires, 40% infra spend reduction"] },
     { dates: "2005 - 2012", role: "Previous Experience", company: "Infosys • TCS", points: ["Middleware Integration Consultant - Infosys, Dec 2009 - Apr 2012", "Senior Software Engineer - TCS, Aug 2005 - Nov 2009"] }
   ],
   certifications: ["Microsoft Azure Fundamentals (AZ-900)", "Microsoft Azure AI - Business Solutions Architect (AB-100)", "Google Cloud Professional Cloud Architect", "Google Cloud Associate Cloud Engineer", "AWS DevOps Engineer - Professional", "EXIN Agile Scrum Master"],

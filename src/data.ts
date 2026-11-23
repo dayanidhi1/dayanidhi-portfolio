@@ -52,13 +52,21 @@ export const DATA = {
 ],
   work: [
   {
+    title: "Professional & Managed Services Growth — EMEA",
+    metrics: [
+      { value: "£20M+", label: "Portfolio" },
+      { value: "Retention + Growth", label: "Outcome" },
+    ],
+    text: "Led EMEA professional services & managed services growth.",
+  },
+    {
     title: "Enterprise Cloud Migration — Energy & Utilities",
     metrics: [
       { value: "250+", label: "Apps Migrated" },
       { value: "40%", label: "Cost Reduction" },
       { value: "£50M", label: "Revenue Programme" },
     ],
-    text: "Led revenue migration programme from on-prem to cloud.",
+    text: "Led Migration programme from on-prem to cloud for regulated E&U customer.",
   },
   {
     title: "Cloud Management Portal — Global Pharma",
@@ -68,16 +76,9 @@ export const DATA = {
     ],
     text: "Led build-vs-buy decision, built in-house CMP, removed vendor lock-in.",
   },
+  
   {
-    title: "Managed Services Growth — EMEA",
-    metrics: [
-      { value: "£10M+", label: "Portfolio" },
-      { value: "Retention + Growth", label: "Outcome" },
-    ],
-    text: "Led EMEA professional services & managed services growth.",
-  },
-  {
-    title: "Platform & Release Transformation — Netcracker",
+    title: "Platform & Release Transformation — Legacy BSS Solution",
     metrics: [
       { value: "Zero-Downtime", label: "Delivery" },
       { value: "40%", label: "Fewer Incidents" },
@@ -91,7 +92,7 @@ export const DATA = {
       { value: "AI Adoption", label: "Outcome" },
       { value: "Governance", label: "Built-In" },
     ],
-    text: "Enterprise AI readiness and AIOps adoption across cloud programmes.",
+    text: "Enterprise AI readiness and AIOps adoption across customer, striving towards 70% faster Ops response.",
   },
 ],
  /* blogs: [
